@@ -12,17 +12,17 @@
 }
 body {
     background-color: black;
-    
-
+    /* min-height: 100vh; */
+    display: flex;
 }
 
-nav {
+nav{
     background-color: wheat;
    border-radius:15px;
    margin: 10px;
    padding: 20px;
-   /* width: 100%; */
    font-family: "Montserrat", sans-serif;
+
 }
 
 
@@ -30,7 +30,7 @@ nav {
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* width: 100%; */
+    
 
 }
 
@@ -48,7 +48,19 @@ ul {
 a {
     text-decoration: none;
     color: black;
+    transition: ease-in .5s all ;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent
+}
 
+
+nav a:hover {
+    background-color: rgba(240, 248, 255, 0.267);
+    padding: 10px;
+   
+    border-color: rgba(0, 0, 0, 0.936);
+    
 }
 
 li {
@@ -101,9 +113,6 @@ section {
     font-family: "Playfair Display SC", serif;
   font-weight: 700;
   font-style: normal;
-
-    
-
 }
 
 .photo {
@@ -186,6 +195,22 @@ align-items:flex-end ;
 }
 
 
+.navbtn img {
+    height: 40px;
+}
+
+.navbtn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width:900px) {
     section {
@@ -201,3 +226,11 @@ align-items:flex-end ;
     } 
 }
 
+
+/* @media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        position: relative; 
+        align-items: center;
+    }
+} */
