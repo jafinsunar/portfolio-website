@@ -7,13 +7,17 @@
 
 
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px; 
 }
-body {
+
+
+
+body{
     background-color: black;
-    /* min-height: 100vh; */
     display: flex;
+    /* flex-wrap: wrap; */
+    /* height: 100%; */
+    /* width:auto; */
 }
 
 nav{
@@ -48,19 +52,20 @@ ul {
 a {
     text-decoration: none;
     color: black;
-    transition: ease-in .5s all ;
+    transition: ease-in .3s all ;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    overflow: hidden;
 }
 
 
 nav a:hover {
-    background-color: rgba(240, 248, 255, 0.267);
+    background-color: rgba(221, 222, 223, 0.193);
     padding: 10px;
    
-    border-color: rgba(0, 0, 0, 0.936);
-    
+    border-color: rgba(62, 58, 58, 0.452);
+    font-weight: 500;
 }
 
 li {
@@ -183,6 +188,31 @@ align-items:flex-end ;
     align-items: center;
 
 }
+
+.project .img {
+    display:flex; 
+    height: 250px; 
+    justify-content: center;
+    /* border-radius: 10px; */
+    /* border: 2px solid black; */
+}
+
+
+
+.project h2 {
+    padding-bottom: 10px;
+    border-radius: 3px;
+    transition: ease-in-out 0.3s all;
+    border-bottom: 2px solid transparent;
+}
+
+.project h2:hover {
+    background-color:#9a916a21;
+    border-color: rgba(16, 16, 147, 0.356);
+}
+
+
+
 
 
 .socials {
